@@ -23,7 +23,7 @@ TTPLAYS stands for TypeScript, TailwindCSS, Prisma, Lucia Auth, Your Database, a
 
 1. Clone the repo
    ```sh
-   git clone TODO: ADD REPO LINK
+   git clone https://github.com/itzAmka/TTPLAYS.git
    ```
 2. Install NPM packages
 
@@ -43,7 +43,14 @@ TTPLAYS stands for TypeScript, TailwindCSS, Prisma, Lucia Auth, Your Database, a
    DATABASE_URL="YOUR_DATA_BASE_URL"
    ```
 
-4. Run the development server
+4. Run the Prisma commands to generate the Prisma client and migrate the database
+
+   ```sh
+   npx prisma generate
+   npx prisma migrate dev --name init
+   ```
+
+5. Run the development server
 
    ```sh
    npm run dev
@@ -53,13 +60,6 @@ TTPLAYS stands for TypeScript, TailwindCSS, Prisma, Lucia Auth, Your Database, a
 
    # OR
    pnpm dev
-   ```
-
-5. Run the Prisma commands to generate the Prisma client and migrate the database
-
-   ```sh
-   npx prisma generate
-   npx prisma migrate dev --name init
    ```
 
 6. Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
@@ -91,7 +91,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Contributions, issues, and feature requests are welcome!
 Thank you for contributing to this project.
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/itzAmka/TTPLAYS/issues).
 
 ## Show your support
 
