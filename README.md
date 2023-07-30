@@ -47,7 +47,6 @@ TTPLAYS stands for TypeScript, TailwindCSS, Prisma, Lucia Auth, Your Database, a
 
    ```sh
    npx prisma generate
-   npx prisma migrate dev --name init
    ```
 
 5. Run the development server
