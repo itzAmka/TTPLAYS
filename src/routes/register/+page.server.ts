@@ -17,7 +17,7 @@ export const load = (async () => {
 }) satisfies PageServerLoad;
 
 export const actions = {
-	login: async ({ request, locals, url }) => {
+	register: async ({ request, locals, url }) => {
 		const registerForm = await superValidate<typeof authFormSchema, TMessage>(
 			request,
 			authFormSchema

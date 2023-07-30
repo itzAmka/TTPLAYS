@@ -106,8 +106,18 @@
 			<p class="input-error !text-base pb-4">{errorMsg}</p>
 		{/if}
 
-		<!-- login button -->
-		<button class="button hover:bg-blue-700" type="submit">Login</button>
+		<div class="flex items-center justify-between">
+			<!-- login button -->
+			<button class="button hover:bg-blue-700" type="submit">Login</button>
+
+			<!-- register link -->
+			<a
+				class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+				href="/register"
+			>
+				Don't have an account? Register here
+			</a>
+		</div>
 	</form>
 </div>
 

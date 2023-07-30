@@ -64,7 +64,7 @@
 	<form
 		class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
 		method="post"
-		action="?/login"
+		action="?/register"
 		use:enhance
 	>
 		<!-- username field -->
@@ -106,8 +106,18 @@
 			<p class="input-error !text-base pb-4">{errorMsg}</p>
 		{/if}
 
-		<!-- register button -->
-		<button class="button hover:bg-blue-700" type="submit">Register</button>
+		<div class="flex items-center justify-between">
+			<!-- register button -->
+			<button class="button hover:bg-blue-700" type="submit">Register</button>
+
+			<!-- login link -->
+			<a
+				class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+				href="login"
+			>
+				Already have an account?
+			</a>
+		</div>
 	</form>
 </div>
 
