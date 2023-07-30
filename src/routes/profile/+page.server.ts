@@ -61,12 +61,13 @@ export const actions = {
 		// check if there is a session
 		if (!session) return fail(401, { message: 'Unauthorized' });
 
+		// check if the session id is the same as the current session id
+		if (sessionId === session.sessionId)
+			return fail(400, { message: 'Cannot delete current session' });
+
 		try {
 			// invalidate the session
 			await auth.invalidateSession(sessionId);
-
-			// set the session to null
-			locals.auth.setSession(null);
 		} catch (error: unknown) {
 			console.log(error);
 

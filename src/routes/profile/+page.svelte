@@ -35,7 +35,7 @@
 					<p class="text-gray-300">{user?.username}</p>
 
 					<!-- logout -->
-					<form method="post" action="?/logout" use:enhance={handleSubmit}>
+					<form method="post" action="?/logout" use:enhance>
 						<button class="btn text-xs btn-logout">Logout</button>
 					</form>
 				</div>
@@ -43,6 +43,7 @@
 				<!-- sessions -->
 				<div class="prose flex flex-col mt-8 gap-4">
 					<h2 class="text-gray-200">Sessions</h2>
+					<!-- <p>To create mulitiple session</p> -->
 					{#each sessions as session}
 						<div class="border p-4 rounded-md">
 							{#if session.sessionId === currentSessionId}
