@@ -9,7 +9,7 @@ import type { Session } from 'lucia';
  */
 export const protectRoutes = (session: Session | null, url: URL) => {
 	// add your private routes here, e.g. ['/admin', '/dashboard']
-	const privateRoutes = ['/admin'];
+	const privateRoutes = ['/profile'];
 
 	// add your auth routes here, e.g. ['/login', '/register'] or ['/signin', '/signup']
 	const authRoutes = ['/login', '/register'];
